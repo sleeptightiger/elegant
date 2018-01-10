@@ -1,0 +1,23 @@
+.hero {
+  background-image: url('../../img/cd-intro-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-headline {
+  align-self: center;
+  text-align: center;
+}
+
+.hero-headline h1 {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  letter-spacing: 7px;
+  font-size: 5.6em;
+  line-height: 1.5em;
+}

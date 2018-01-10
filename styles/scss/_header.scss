@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .logo {
+  display: flex;
+  padding-left: 20px;
+}
+
+header .logo img {
+  border: 1px dotted red;
+  align-self: center;
+}
+
+header .menu {
+  display: flex;
+  padding-right: 20px;
+}
+
+header span {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  align-self: center;
+}
