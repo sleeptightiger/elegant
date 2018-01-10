@@ -1,0 +1,78 @@
+.hero {
+  background-image: url('../../img/cd-intro-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-headline {
+  align-self: center;
+  text-align: center;
+}
+
+.hero-headline h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 4em;
+  line-height: 1.5em;
+}
+
+/////////////Who We Are/////////////
+.who {
+  width: 88%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 115px;
+}
+
+.sub-titles {
+  color: rgba(210, 166, 62, .7);
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.section-titles {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(2, 23, 37, 0.7);
+  font-size: 3.1em;
+  font-weight: 600;
+  margin-bottom: .7em;
+}
+
+.who p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  color: rgba(2, 23, 37, 0.7);
+  line-height: 25px;
+}
+
+.home-buttons {
+  color: rgba(2, 23, 37, 0.7);
+  background-color: #fff;
+  padding: 20px 40px;
+  border: 1px solid rgba(2, 23, 37, 0.7);
+  margin: 50px 0;
+}
+
+.home-buttons:hover {
+  color: rgba(210, 166, 62, .7);
+  border: 1px solid rgba(210, 166, 62, .7);
+}
+
+
+@media screen and (min-width: 1180px) {
+  .who p {
+    font-size: 1.3em;
+    line-height: 35px;
+  }
+}
