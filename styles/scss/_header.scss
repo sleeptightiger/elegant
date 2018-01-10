@@ -7,6 +7,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 101;
 }
 
 header .logo {
@@ -30,4 +31,19 @@ header span {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   align-self: center;
+}
+
+@media screen and (max-width: 780px) {
+  header {
+    background-color: rgba(2, 23, 37, 0.7);
+    height: 60px;
+  }
+
+  header .menu {
+    padding-right: 0;
+  }
+
+  .menu-label {
+    display: none;
+  }
 }

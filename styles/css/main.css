@@ -418,7 +418,8 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 101; }
 
 header .logo {
   display: flex;
@@ -439,6 +440,16 @@ header span {
   text-transform: uppercase;
   align-self: center; }
 
+@media screen and (max-width: 780px) {
+  header {
+    background-color: rgba(2, 23, 37, 0.7);
+    height: 60px; }
+
+  header .menu {
+    padding-right: 0; }
+
+  .menu-label {
+    display: none; } }
 .hero {
   background-image: url("../../img/cd-intro-bg.jpg");
   background-position: center;
@@ -712,11 +723,80 @@ footer span {
   top: 54.5%; }
 
 .close .line1 {
-  transform: rotate(45deg);
+  transform: rotate(135deg);
   top: 48.5%; }
 
 .close .line2, .close .line3 {
-  transform: rotate(-45deg);
+  transform: rotate(225deg);
   top: 48.5%; }
+
+@media screen and (max-width: 780px) {
+  .hamburger {
+    background-color: black;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center; }
+
+  .line1 {
+    top: 40%; }
+
+  .line3 {
+    top: 56%; } }
+.hidden-menu {
+  height: 100vh;
+  background-color: #2d3035;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding-top: 100px;
+  transform: translateY(-100vh);
+  z-index: 100;
+  transition: all ease-in .8s;
+  overflow: scroll; }
+
+.menu-section {
+  width: 60%;
+  margin: 0 auto; }
+
+.hidden-menu h1 {
+  margin: 0;
+  color: #fff; }
+
+.unhide {
+  transform: translateY(0vh); }
+
+.menu-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+.menu-section a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: #d2a63e;
+  display: inline-block;
+  width: 100%;
+  font-weight: 200;
+  font-size: 1.9em;
+  margin-bottom: 35px;
+  letter-spacing: 2px; }
+
+.menu-section a:hover {
+  color: #D9B55E;
+  font-weight: 300; }
+
+.fa {
+  color: #d6ae4e; }
+
+.follow-links {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=main.css.map */

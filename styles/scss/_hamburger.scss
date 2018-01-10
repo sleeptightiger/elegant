@@ -27,11 +27,34 @@
 }
 
 .close .line1 {
-  transform: rotate(45deg);
+  transform: rotate(135deg);
   top: 48.5%;
 }
 
 .close .line2, .close .line3 {
-  transform: rotate(-45deg);
+  transform: rotate(225deg);
   top: 48.5%;
+}
+
+@media screen and (max-width: 780px) {
+  .hamburger {
+    background-color: rgba(0,0,0,1);
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .line1 {
+    top: 40%;
+  }
+
+
+  .line3 {
+    top: 56%;
+  }
+
+
+
+
 }
