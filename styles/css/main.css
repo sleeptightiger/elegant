@@ -430,7 +430,8 @@ header .logo img {
 header .menu {
   display: flex;
   padding-right: 30px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  cursor: pointer; }
 
 header span {
   color: #fff;
@@ -691,7 +692,8 @@ footer span {
   width: 20px;
   height: 20px;
   align-self: center;
-  padding-left: 2px; }
+  padding: 2px;
+  cursor: pointer; }
 
 .line {
   position: absolute;
