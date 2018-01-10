@@ -555,6 +555,59 @@ header span {
   color: rgba(2, 23, 37, 0.7);
   line-height: 25px; }
 
+.post-section {
+  width: 88%;
+  max-width: 800px;
+  margin: 115px auto;
+  text-align: center; }
+
+.post {
+  margin-top: 40px;
+  display: flex;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif; }
+
+.post-img img {
+  width: 100%; }
+
+.post-img {
+  width: 100%; }
+
+.post-text {
+  text-align: left;
+  padding: 30px 3em; }
+
+.post span {
+  color: rgba(2, 23, 37, 0.7);
+  font-size: .9em; }
+
+.post h4 {
+  color: rgba(2, 23, 37, 0.7);
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 25px; }
+
+.post p {
+  color: rgba(2, 23, 37, 0.7);
+  font-weight: 100;
+  line-height: 25px; }
+
+.post-text a button {
+  background-color: #f9f9f9;
+  padding: 15px 45px;
+  font-weight: 100;
+  color: rgba(2, 23, 37, 0.5); }
+
+.post-text a button:hover {
+  color: rgba(210, 166, 62, 0.7);
+  border: 1px solid rgba(210, 166, 62, 0.7); }
+
+.post-section a button {
+  color: rgba(2, 23, 37, 0.5);
+  font-weight: 100;
+  padding: 18px 40px; }
+
 @media screen and (min-width: 1180px) {
   .who p {
     font-size: 1.3em;
@@ -569,6 +622,9 @@ header span {
     margin-bottom: 40px; }
 
   .card-text {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .post {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=main.css.map */
