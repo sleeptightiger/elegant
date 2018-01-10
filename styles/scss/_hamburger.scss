@@ -1,0 +1,36 @@
+.hamburger {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  padding-left: 2px;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background: #fff;
+  transition: all cubic-bezier(0.25, 0.1, 0.3, 1.65) 0.3s;
+}
+
+.line1 {
+  top: 43%;
+}
+
+.line2 {
+  top: 48.5%;
+}
+
+.line3 {
+  top: 54.5%;
+}
+
+.close .line1 {
+  transform: rotate(45deg);
+  top: 48.5%;
+}
+
+.close .line2, .close .line3 {
+  transform: rotate(-45deg);
+  top: 48.5%;
+}
