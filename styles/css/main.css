@@ -659,5 +659,29 @@ header span {
 
   .post {
     flex-direction: column; } }
+footer {
+  background-color: #eeeeee;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center; }
+
+footer span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  color: rgba(2, 23, 37, 0.7); }
+
+.copyright, .email {
+  align-self: center;
+  padding: 8px; }
+
+@media screen and (max-width: 780px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-end; }
+
+  .copyright, .email {
+    align-self: flex-start; } }
 
 /*# sourceMappingURL=main.css.map */
