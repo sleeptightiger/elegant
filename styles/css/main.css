@@ -563,5 +563,12 @@ header span {
   .we p {
     font-size: 1.3em;
     line-height: 35px; } }
+@media screen and (max-width: 780px) {
+  .card {
+    width: 100%;
+    margin-bottom: 40px; }
+
+  .card-text {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
