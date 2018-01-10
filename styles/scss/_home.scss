@@ -26,9 +26,8 @@
 .who {
   width: 88%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 115px auto;
   text-align: center;
-  margin-top: 115px;
 }
 
 .sub-titles {
@@ -75,4 +74,27 @@
     font-size: 1.3em;
     line-height: 35px;
   }
+}
+
+
+////////////What/////////////////
+.what {
+  text-align: center;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.gallery {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 50% 50%;
+  grid-gap: 3px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
 }
