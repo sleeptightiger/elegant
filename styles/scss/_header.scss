@@ -1,4 +1,5 @@
 header {
+  transform : translate3d(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-content: baseline;
@@ -8,42 +9,44 @@ header {
   top: 0;
   left: 0;
   z-index: 101;
+  transition: all ease-in .3s;
+  .logo {
+    display: flex;
+    padding-left: 30px;
+    img {
+      align-self: center;
+    }
+  }
+  .menu {
+    display: flex;
+    padding-right: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  span {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    align-self: center;
+  }
 }
 
-header .logo {
-  display: flex;
-  padding-left: 30px;
-}
-
-header .logo img {
-  align-self: center;
-}
-
-header .menu {
-  display: flex;
-  padding-right: 30px;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-header span {
-  color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  align-self: center;
+.sticky {
+  position: sticky;
+  background-color: rgba(14,34,42,.5);
+  // margin-top: -100px;
 }
 
 @media screen and (max-width: 780px) {
   header {
     background-color: rgba(2, 23, 37, 0.7);
     height: 60px;
+    .menu {
+      padding-right: 0;
+      .menu-label {
+        display: none;
+      }
+    }
   }
 
-  header .menu {
-    padding-right: 0;
-  }
-
-  .menu-label {
-    display: none;
-  }
 }
