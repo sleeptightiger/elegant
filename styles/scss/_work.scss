@@ -1,0 +1,83 @@
+.work-hero {
+  background: url('../../img/projects-bg_img.gif') center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+#workDescript {
+  width: 90%;
+  max-width: 768px;
+  margin: 5rem auto;
+  text-align: center;
+  h4 {
+    color: rgb(212,175,55);
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: .9rem;
+  }
+  h1 {
+    color: rgba(2, 23, 37, 0.7);
+    font-family: 'Open Sans', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+  }
+  p {
+    line-height: 1.6;
+    margin: 2em 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.work-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .img {
+    margin-bottom: 5px;
+    flex-grow: 1;
+    height: 400px;
+  }
+  .img1 {
+    background: url('../../img/heydays_nora.jpg') center/cover no-repeat;
+  }
+  .img2 {
+    background: url('../../img/heydays_berg.jpg') center/cover no-repeat;
+  }
+  .img3 {
+    background: url('../../img/heydays_premiss.jpg') center/cover no-repeat;
+  }
+  .img4 {
+    background: url('../../img/heydays_goa.jpg') center/cover no-repeat;
+  }
+  .img5 {
+    background: url('../../img/Postalia-crop.jpg') center/cover no-repeat;
+  }
+  .img6 {
+    background: url('../../img/heydays_mellbye.jpg') center/cover no-repeat;
+  }
+  .img7 {
+    background: url('../../img/heydays_sjemmedal.jpg') center/cover no-repeat;
+  }
+  .img8 {
+    background: url('../../img/heydays_abn.jpg') center/cover no-repeat;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .work-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .img {
+      min-width: 24.5%;
+      height: 300px;
+      margin-bottom: 3px;
+      margin-right: .5%;
+    }
+    .img:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

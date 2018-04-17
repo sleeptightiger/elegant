@@ -8,6 +8,9 @@ menu.addEventListener('click', () => {
     hamburger.classList.toggle('close');
     hiddenMenu.style.transform = `translateY(-676px)`;
     body.style.overflow = 'scroll';
+    if(window.innerWidth < 780) {
+      header.style.backgroundColor = 'rgba(14,34,42,.5)';
+    }
     if(window.pageYOffset > 0) {
       header.style.backgroundColor = 'rgba(14,34,42,.5)';
     }

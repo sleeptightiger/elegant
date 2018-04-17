@@ -25,17 +25,18 @@ function initScroll(elementId) {
 
 }
 
-window.onscroll = function() {sticky()};
+if(window.innerWidth > 780) {
+  window.onscroll = function() {sticky()};
+
+}
 let lastScrollTop = 0;
 function sticky() {
-
+  console.log("stick!");
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop){
-     console.log('down');
      header.classList.remove('sticky');
      body.style.marginTop = "0px";
   } else {
-    console.log('up');
     header.classList.add('sticky');
     body.style.marginTop = "-100px";
     header.style.backgroundColor = 'rgba(14,34,42,.5)';

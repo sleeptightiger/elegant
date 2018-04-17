@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,700|Source+Sans+Pro:200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Cardo");
 * {
   box-sizing: border-box;
   margin: 0; }
@@ -425,7 +426,7 @@ header {
   header .logo {
     display: flex;
     padding-left: 30px; }
-    header .logo img {
+    header .logo a {
       align-self: center; }
   header .menu {
     display: flex;
@@ -889,5 +890,424 @@ footer span {
           padding: 2%;
           padding-left: 0;
           padding-topd: 0; } }
+.container {
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto; }
+  .container .posts {
+    position: relative;
+    background-color: #f9f9f9;
+    margin-bottom: 50px; }
+    .container .posts .posts-section .single-post {
+      padding: 2em;
+      background-color: #FFF;
+      margin-bottom: 4em; }
+      .container .posts .posts-section .single-post .second-post-img {
+        background: url("../../img/tumblr_n8q3ocYvxA1tubinno1_1280.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 230px;
+        margin-bottom: 1em; }
+      .container .posts .posts-section .single-post .post-img {
+        background: url("../../img/tumblr_na06rsMKCT1tubinno1_1280.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 230px;
+        margin-bottom: 1em; }
+      .container .posts .posts-section .single-post h1 {
+        font-family: 'Open Sans', serif;
+        font-size: 2em;
+        line-height: 1.6;
+        font-weight: 300;
+        margin: 0;
+        margin-bottom: .5em; }
+      .container .posts .posts-section .single-post .post-date {
+        font-family: 'Open Sans', serif;
+        color: rgba(210, 166, 62, 0.7);
+        font-size: .9em; }
+      .container .posts .posts-section .single-post .post-description {
+        font-family: 'Cardo', serif;
+        line-height: 1.6;
+        margin-top: 2em;
+        margin-bottom: 4em; }
+      .container .posts .posts-section .single-post a .post-buttons {
+        color: rgba(2, 23, 37, 0.7);
+        font-weight: 100;
+        background-color: #fff;
+        padding: 15px 5px;
+        border: 1px solid rgba(2, 23, 37, 0.7);
+        width: 180px; }
+      .container .posts .posts-section .single-post a:hover .post-buttons {
+        color: rgba(210, 166, 62, 0.7);
+        border: 1px solid rgba(210, 166, 62, 0.7); }
+    .container .posts .side-menu {
+      padding: 2rem;
+      padding-bottom: 8em; }
+      .container .posts .side-menu .category h1 {
+        margin: 0;
+        font-family: 'Open sans', serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        border-bottom: #d4af37 solid 2px; }
+      .container .posts .side-menu .category ul {
+        list-style-type: none;
+        padding: 0; }
+        .container .posts .side-menu .category ul li a {
+          display: inline-block;
+          text-decoration: none;
+          color: #000; }
+          .container .posts .side-menu .category ul li a i {
+            font-family: 'Open sans', serif;
+            font-weight: 300;
+            line-height: 1.6; }
+          .container .posts .side-menu .category ul li a:hover {
+            color: #d4af37; }
+      .container .posts .side-menu .category .project1 {
+        background: url("../../img/heydays_berg.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 5px; }
+      .container .posts .side-menu .category .project2 {
+        background: url("../../img/heydays_premiss.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 5px; }
+      .container .posts .side-menu .category .project3 {
+        background: url("../../img/heydays_goa.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 5px; }
+      .container .posts .side-menu .category .project4 {
+        background: url("../../img/Postalia-crop.jpg") center/cover no-repeat;
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 5px; }
+    .container .posts .load-more-link {
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translate(-50%, -50%); }
+      .container .posts .load-more-link .load-more-button {
+        color: rgba(2, 23, 37, 0.7);
+        font-weight: 100;
+        background-color: transparent;
+        padding: 20px 10px;
+        border: 1px solid rgba(2, 23, 37, 0.7);
+        width: 15rem; }
+      .container .posts .load-more-link:hover .load-more-button {
+        color: rgba(210, 166, 62, 0.7);
+        border: 1px solid rgba(210, 166, 62, 0.7); }
+
+@media screen and (min-width: 780px) {
+  .blog-hero {
+    height: 400px;
+    width: 100%;
+    background: url("../../img/tumblr_nau9zqjZay1tubinno1_1280.jpg") center/cover no-repeat; }
+
+  .container .posts {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem; }
+    .container .posts .posts-section {
+      width: 65%;
+      margin-right: 5%; }
+    .container .posts .side-menu {
+      padding: 0;
+      width: 30%; }
+      .container .posts .side-menu .category .project1 {
+        min-height: 200px; }
+      .container .posts .side-menu .category .project2 {
+        min-height: 200px; }
+      .container .posts .side-menu .category .project3 {
+        min-height: 200px; }
+      .container .posts .side-menu .category .project4 {
+        min-height: 200px; } }
+.project-hero {
+  background: url("../../img/heydays_nora04-1440x900.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 150px; }
+
+#projectContainer {
+  width: 90%;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
+  #projectContainer .project-descript {
+    padding: 1rem;
+    margin-bottom: 80px; }
+    #projectContainer .project-descript h1 {
+      font-family: 'Open sans', serif;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: .5em;
+      font-size: 4em; }
+    #projectContainer .project-descript p {
+      font-family: 'Cardo', serif;
+      line-height: 2;
+      font-size: 1.3em; }
+  #projectContainer .projects-gallery {
+    padding: 1rem; }
+    #projectContainer .projects-gallery .gallery-img {
+      margin-bottom: 5px; }
+    #projectContainer .projects-gallery .pj1 {
+      background: url("../../img/heydays_nora01-1440x900.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .projects-gallery .pj2 {
+      background: url("../../img/heydays_nora022-1440x900.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .projects-gallery .pj3 {
+      background: url("../../img/heydays_nora10.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .projects-gallery .pj4 {
+      background: url("../../img/heydays_nora04-1440x900.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+  #projectContainer .side-projects-gallery {
+    padding: 1rem; }
+    #projectContainer .side-projects-gallery .gallery-img {
+      margin-bottom: 5px; }
+    #projectContainer .side-projects-gallery .pj5 {
+      background: url("../../img/heydays_berg.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .side-projects-gallery .pj6 {
+      background: url("../../img/heydays_premiss.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .side-projects-gallery .pj7 {
+      background: url("../../img/heydays_goa_2b.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .side-projects-gallery .pj8 {
+      background: url("../../img/Postalia-crop.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .side-projects-gallery .pj9 {
+      background: url("../../img/heydays_mellbye.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+    #projectContainer .side-projects-gallery .pj10 {
+      background: url("../../img/heydays_sjemmedal.jpg") center/cover no-repeat;
+      width: 100%;
+      min-height: 300px; }
+
+.social-buttons {
+  display: none; }
+
+@media screen and (min-width: 780px) {
+  #projectContainer {
+    padding: 3em;
+    display: flex;
+    flex-direction: row; }
+    #projectContainer .left-side {
+      width: 60%;
+      margin-right: 5%; }
+      #projectContainer .left-side .project-descript {
+        padding: 0; }
+      #projectContainer .left-side .projects-gallery {
+        padding: 0; }
+    #projectContainer .side-projects-gallery {
+      width: 35%;
+      padding: 0; }
+
+  .social-buttons {
+    display: block;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto; }
+    .social-buttons a .social-button {
+      color: rgba(2, 23, 37, 0.7);
+      font-weight: 100;
+      background-color: #fff;
+      padding: 15px 5px;
+      border: 1px solid rgba(2, 23, 37, 0.7);
+      width: 180px; }
+    .social-buttons a:hover .social-button {
+      color: rgba(210, 166, 62, 0.7);
+      border: 1px solid rgba(210, 166, 62, 0.7); } }
+.title-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  text-align: center; }
+  .title-container .sub-title {
+    color: #d4af37;
+    margin-bottom: 1rem;
+    font-weight: 400; }
+  .title-container h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgba(2, 23, 37, 0.7);
+    margin: 0; }
+
+.contact-blocks {
+  width: 90%;
+  margin: 0 auto; }
+  .contact-blocks .top {
+    width: 100%; }
+    .contact-blocks .top .loc {
+      background-color: #d6ae4e;
+      padding: 2rem;
+      height: 200px; }
+      .contact-blocks .top .loc span {
+        display: inline-block;
+        font-size: 40px;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        line-height: .3;
+        margin-bottom: 2rem; }
+      .contact-blocks .top .loc h2 {
+        line-height: 2em;
+        font-size: 1.5rem;
+        color: #FFF;
+        font-family: 'Open Sans', serif;
+        font-weight: 300; }
+    .contact-blocks .top .loc-img {
+      background: url("../../img/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg") center/cover no-repeat;
+      height: 200px;
+      width: 100%; }
+  .contact-blocks .bttm {
+    width: 100%; }
+    .contact-blocks .bttm .block-descript {
+      height: 200px;
+      padding: 2em 3rem;
+      background-color: #f9f9f9; }
+      .contact-blocks .bttm .block-descript p {
+        font-family: 'Open Sans', serif;
+        font-weight: 300;
+        line-height: 1.6;
+        font-size: 15px; }
+    .contact-blocks .bttm .phone-block {
+      background-color: #000;
+      padding: 2rem;
+      height: 200px; }
+      .contact-blocks .bttm .phone-block .dash {
+        display: block;
+        font-size: 40px;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        line-height: .3;
+        margin-bottom: 2rem; }
+      .contact-blocks .bttm .phone-block .number {
+        display: block;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        color: #FFF; }
+
+.email-button {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  .email-button .email-link button {
+    margin: 5rem 0;
+    color: rgba(2, 23, 37, 0.7);
+    font-weight: 100;
+    background-color: #fff;
+    padding: 15px 5px;
+    border: 1px solid rgba(2, 23, 37, 0.7);
+    width: 180px; }
+  .email-button .email-link:hover button {
+    color: rgba(210, 166, 62, 0.7);
+    border: 1px solid rgba(210, 166, 62, 0.7); }
+
+@media screen and (min-width: 780px) {
+  .contact-hero {
+    height: 400px;
+    background: url("../../img/cd-content-contact-bg_img.jpg") center/cover no-repeat; }
+
+  .contact-blocks .top {
+    display: flex;
+    flex-direction: row; }
+    .contact-blocks .top .loc {
+      height: 300px;
+      width: 35%;
+      margin-right: .5%; }
+    .contact-blocks .top .loc-img {
+      width: 64.5%;
+      height: 300px; }
+  .contact-blocks .bttm {
+    display: flex;
+    flex-direction: row; }
+    .contact-blocks .bttm .block-descript {
+      width: 64.5%;
+      height: 300px;
+      margin-right: .5%; }
+    .contact-blocks .bttm .phone-block {
+      height: 300px;
+      width: 35%; } }
+.work-hero {
+  background: url("../../img/projects-bg_img.gif") center/cover no-repeat;
+  height: 100vh;
+  width: 100%; }
+
+#workDescript {
+  width: 90%;
+  max-width: 768px;
+  margin: 5rem auto;
+  text-align: center; }
+  #workDescript h4 {
+    color: #d4af37;
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: .9rem; }
+  #workDescript h1 {
+    color: rgba(2, 23, 37, 0.7);
+    font-family: 'Open Sans', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0; }
+  #workDescript p {
+    line-height: 1.6;
+    margin: 2em 0;
+    font-size: 16px;
+    font-weight: 300; }
+
+.work-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .work-gallery .img {
+    margin-bottom: 5px;
+    flex-grow: 1;
+    height: 400px; }
+  .work-gallery .img1 {
+    background: url("../../img/heydays_nora.jpg") center/cover no-repeat; }
+  .work-gallery .img2 {
+    background: url("../../img/heydays_berg.jpg") center/cover no-repeat; }
+  .work-gallery .img3 {
+    background: url("../../img/heydays_premiss.jpg") center/cover no-repeat; }
+  .work-gallery .img4 {
+    background: url("../../img/heydays_goa.jpg") center/cover no-repeat; }
+  .work-gallery .img5 {
+    background: url("../../img/Postalia-crop.jpg") center/cover no-repeat; }
+  .work-gallery .img6 {
+    background: url("../../img/heydays_mellbye.jpg") center/cover no-repeat; }
+  .work-gallery .img7 {
+    background: url("../../img/heydays_sjemmedal.jpg") center/cover no-repeat; }
+  .work-gallery .img8 {
+    background: url("../../img/heydays_abn.jpg") center/cover no-repeat;
+    margin-bottom: 0; }
+
+@media screen and (min-width: 780px) {
+  .work-gallery {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .work-gallery .img {
+      min-width: 24.5%;
+      height: 300px;
+      margin-bottom: 3px;
+      margin-right: .5%; }
+    .work-gallery .img:nth-child(4n) {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

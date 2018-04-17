@@ -1,0 +1,184 @@
+.container {
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  .posts {
+    position: relative;
+    background-color: rgb(249,249,249);
+    margin-bottom: 50px;
+    .posts-section {
+      .single-post {
+        padding: 2em;
+        background-color: #FFF;
+        margin-bottom: 4em;
+        .second-post-img {
+          background: url('../../img/tumblr_n8q3ocYvxA1tubinno1_1280.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 230px;
+          margin-bottom: 1em;
+        }
+        .post-img {
+          background: url('../../img/tumblr_na06rsMKCT1tubinno1_1280.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 230px;
+          margin-bottom: 1em;
+        }
+        h1 {
+          font-family: 'Open Sans', serif;
+          font-size: 2em;
+          line-height: 1.6;
+          font-weight: 300;
+          margin: 0;
+          margin-bottom: .5em;
+        }
+        .post-date {
+          font-family: 'Open Sans', serif;
+          color: rgba(210, 166, 62, .7);
+          font-size: .9em;
+        }
+        .post-description {
+          font-family: 'Cardo', serif;
+          line-height: 1.6;
+          margin-top: 2em;
+          margin-bottom: 4em;
+        }
+        a {
+          .post-buttons {
+            color: rgba(2, 23, 37, 0.7);
+            font-weight: 100;
+            background-color: #fff;
+            padding: 15px 5px;
+            border: 1px solid rgba(2, 23, 37, 0.7);
+            width: 180px;
+          }
+          &:hover .post-buttons {
+            color: rgba(210, 166, 62, .7);
+            border: 1px solid rgba(210, 166, 62, .7);
+          }
+        }
+      }
+
+
+    }
+    .side-menu {
+
+      padding: 2rem;
+      padding-bottom: 8em;
+      .category {
+        h1 {
+          margin: 0;
+          font-family: 'Open sans', serif;
+          font-size: 1.5rem;
+          font-weight: 300;
+          padding-bottom: 1rem;
+          border-bottom: rgb(212,175,55) solid 2px;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            a {
+              display: inline-block;
+              text-decoration: none;
+              color: #000;
+              i {
+                font-family: 'Open sans', serif;
+                font-weight: 300;
+                line-height: 1.6;
+              }
+              &:hover {
+                color: rgb(212,175,55);
+              }
+            }
+
+          }
+
+        }
+        .project1 {
+          background: url('../../img/heydays_berg.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 350px;
+          margin-bottom: 5px;
+        }
+        .project2 {
+          background: url('../../img/heydays_premiss.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 350px;
+          margin-bottom: 5px;
+        }
+        .project3 {
+          background: url('../../img/heydays_goa.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 350px;
+          margin-bottom: 5px;
+        }
+        .project4 {
+          background: url('../../img/Postalia-crop.jpg') center/cover no-repeat;
+          width: 100%;
+          min-height: 350px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .load-more-link {
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translate(-50%, -50%);
+      .load-more-button {
+
+
+        color: rgba(2, 23, 37, 0.7);
+        font-weight: 100;
+        background-color: transparent;
+        padding: 20px 10px;
+        border: 1px solid rgba(2, 23, 37, 0.7);
+        width: 15rem;
+      }
+      &:hover .load-more-button {
+        color: rgba(210, 166, 62, .7);
+        border: 1px solid rgba(210, 166, 62, .7);
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .blog-hero {
+    height: 400px;
+    width: 100%;
+    background: url('../../img/tumblr_nau9zqjZay1tubinno1_1280.jpg') center/cover no-repeat;
+  }
+  .container {
+    .posts {
+      display: flex;
+      flex-direction: row;
+      padding: 4rem;
+      .posts-section {
+        width: 65%;
+        margin-right: 5%;
+      }
+      .side-menu {
+        padding: 0;
+        width: 30%;
+        .category {
+          .project1 {
+            min-height: 200px;
+          }
+          .project2 {
+            min-height: 200px;
+          }
+          .project3 {
+            min-height: 200px;
+          }
+          .project4 {
+            min-height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
